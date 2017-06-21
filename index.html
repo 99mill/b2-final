@@ -9,17 +9,156 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Document</title>
 </head>
-<body>
+<body data-spy="scroll">
 
+<!-- TOP BTN -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<!-- LANDING PAGE -->
+<div class="landing">
+  <div class="row landing-pg">
+    <div class="col-sm-8 col-sm-offset-2"> <!-- GREETING -->
+      <!-- <h1>Lorem ipsum dolor.</h1> -->
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt velit officiis, voluptatem, fugiat, quidem ipsum sapiente ducimus nostrum iusto earum natus alias. Molestiae, illum.</p> -->
+    </div>
+    <div class="corner landing-bot landing-bot-left"></div> <!-- BOT LEFT CORNER -->
+    <div class="corner landing-bot landing-bot-right"></div> <!-- BOT RIGHT COENER -->
+  </div>
+</div>
 
+<!-- NAVBAR -->
+<header  data-spy="affix" data-offset-top="750">
+  <nav class="navbar navbar-default white-bkg"  data-spy="affix" data-offset-top="750">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header"> <!-- DO NOT REMOVE -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Lorem Ipsum</a>
+      </div> <!-- DO NOT REMOVE -->
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="underline" href="#about">About</a></li>
+          <li><a class="underline" href="#portfolio">Portfolio</a></li>
+          <li><a class="underline" href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
 
+<!-- INTRODUCTION -->
+<div class="container-fluid" id="intro">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+
+      <div class="row about"> <!-- ABOUT ME -->
+        <div class="col-sm-5">
+          <h1>About me:</h1>
+        </div>
+        <div class="col-sm-7">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatem amet temporibus sint recusandae error fuga eaque id tempora molestias. Id esse illo nemo excepturi ut labore possimus quaerat officiis.</p>
+        </div>
+      </div>
+
+      <div class="row skills"> <!-- SKILLS -->
+        <div class="col-sm-5">
+          <h1>Skills learned:</h1>
+        </div>
+        <div class="col-sm-7">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eius dicta beatae itaque? Ex aspernatur, a quasi, ut corporis mollitia, hic maxime provident sequi accusantium reprehenderit amet? Harum distinctio at eaque porro fugiat omnis nisi.</p>
+        </div>
+      </div>
+
+      <div class="row goals"> <!-- GOALS -->
+        <div class="col-sm-5">
+          <h1>Goals:</h1>
+        </div>
+        <div class="col-sm-7">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laudantium, repellendus ipsum praesentium distinctio unde voluptatum magni repudiandae. Quod, at! Explicabo iusto minima sit, laboriosam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PORTFOLIO -->
+<div class="container-fluid portfolio">
+  <div class="corner portfolio-top portfolio-top-left"></div> <!-- TOP LEFT CORNER -->
+  <div class="corner portfolio-top portfolio-top-right"></div> <!-- TOP RIGHT CORNER -->
+
+  <div class="container">
+
+    <div class="row" id="port-row">
+      <div class="port-tree">
+        <div class="col-sm-3 col-sm-offset-3 col-xs-2 col-xs-offset-2" id="port-left">
+          <img src="" alt="">
+        </div>
+
+        <div class="col-sm-3">
+            <div class="row port-right" id="port-right-top"></div>
+            <div class="row port-right"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" corner portfolio-bot portfolio-bot-left"></div> <!-- BOT LEFT CORNER -->
+  <div class="corner portfolio-bot portfolio-bot-right"></div> <!-- BOT RIGHT CORNER -->
+</div>
+
+<!-- CONTACT -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2"> <!-- CONTACT CALL TO ACTION -->
+      <h1>Lets collaborate.</h1>
+      <p>drop me an inquiry and lets work together on something new!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6"> <!-- CONTACT FORM -->
+
+    </div>
+    <div class="col-sm-6"> <!-- ADDRESS / LOCATION -->
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+
+    </div>
+
+    <div class="col-sm-4">
+
+    </div>
+
+    <div class="col-sm-4">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12"></div>
+  </div>
+</footer>
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
