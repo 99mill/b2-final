@@ -46,6 +46,25 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.name, .intro-text {
+  opacity: 0;
+  animation: fadein 1s ease-out forwards;
+  animation-delay: .5s;
+  text-shadow: 1px 1px 1px #000;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .landing-bot {
@@ -67,26 +86,15 @@
 
 /*========== HEADER =========*/
 
-/*.navbar-nav li>.active:hover {
-  border-bottom: solid #23c4a9 2px;
-}
-
-.navbar-nav li>a:hover {
-  border-bottom: solid #23c4a9 2px;
-}*/
-
 .navbar {
     border: none;
+    height: 3vh;
 }
 
 /* Underline From Left */
 /*==== FROM : http://ianlunn.github.io/Hover/#effects ====*/
 .underline {
-  /*display: inline-block;
-  vertical-align: middle;*/
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  /*box-shadow: 0 0 1px transparent;*/
   position: relative;
   overflow: hidden;
 }
@@ -99,11 +107,8 @@
   bottom: 0;
   background: #23c4a9;
   height: 4px;
-  /*-webkit-transition-property: right;*/
   transition-property: right;
-  /*-webkit-transition-duration: 0.3s;*/
   transition-duration: 0.3s;
-  /*-webkit-transition-timing-function: ease-out;*/
   transition-timing-function: ease-out;
 }
 
@@ -115,7 +120,7 @@
 .affix {
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 
@@ -137,19 +142,18 @@
   margin-bottom: 7%;
 }
 
-
-
-
 /*============= PORTFOLIO ==========*/
 
 .portfolio {
-  height: 1100px;
+  height: 1600px;
   background-image: url('../img/trees.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: -1;
   overflow: hidden;
+  margin-top: -50px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 .portfolio-top {
@@ -167,7 +171,7 @@
 }
 
 .portfolio-bot {
-  bottom: -30%;
+  bottom: -33%;
 }
 
 .portfolio-bot-left {
@@ -180,24 +184,62 @@
   left: 60%;
 }
 
-.port-tree {
-  display: flex;
-  align-items: center;
+.portfolio-row {
+  height: 300px;
+  padding-top: 50px;
 }
 
-#port-left {
-  height: 400px;
-  border: 1px red solid;
-  border-left: none;
+.portfolio-img {
+  width: 70%;
+  margin: 0 auto;
 }
 
-.port-right {
-  height: 200px;
+.portfolio-img:hover {
+  filter: grayscale(1);
 }
 
-#port-right-top {
-  border-bottom: 1px red solid;
+.portfolio-row h1 {
+  margin-top: 50px;
 }
+
+#caption-two {
+  text-align: right;
+}
+
+
+
+/*========= CONTACT ==========*/
+
+.contact {
+  height: 550px;
+  margin-top: 50px;
+  color: #23c4a9;
+}
+
+address {
+  text-align: right;
+}
+
+iframe {
+  height: 300px;
+  width: 100%;
+  margin-top: 17px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,7 +251,13 @@ footer {
   height: 16vh;
 }
 
-
+.social-box {
+  height: 100px;
+  width: 50px;
+  background-color: black;
+  z-index: -1;
+  display:inline-block;
+}
 
 
 
